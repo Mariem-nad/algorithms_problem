@@ -1,0 +1,111 @@
+procedure remplir(var n:integer, var t:ARRAY_of INTEGER)
+  VAR
+  n: INTEGER;
+  T: INTEGER;
+    i:INTEGER
+  BEGIN
+      write("Donner la taille du t")
+      read(n)
+    FOR i FROM 0 TO n-1 DO
+      IF T [i] = x THEN
+        nb := nb +1
+      END_IF
+    END_FOR
+  END
+
+FUNCTION chercher(T:ARRAY_of INTEGR, n:INTEGER x:INTEGER):BOOLEAN 
+VAR
+  existe:BOOLEAN;
+  i: INTEGER;
+  x: INTEGER;
+BEGIN
+  existe := FALSE
+  i := 0
+  WHILE (i<n) ET(Existe = FALSE) DO
+    IF t[i] = x THEN
+      existe := TRUE
+    ELSE
+      i := i+ 1
+    END_IF
+  end while
+  IF existe = TRUE THEN
+    write(x, " Existe dans le tableau")
+  ELSE
+    write (x, " n'existe pas dans le tableau")
+  RETURN existe
+END
+
+ALGORITHM Sum_Of_Uncommon_Elements
+VAR
+  A,B= array of INTEGER
+  som INTEGER;
+  n1,n2: INTEGER;
+BEGIN
+  remplir(A,N1)
+  remplir(B,N2)
+  som=0
+  FOR i FROM 0 TO N1-1 DO
+    if recherche(B,n2,A[i])=FALSE THEN
+      som=som+A[i]
+      write(A[i])
+    END_IF 
+  END_FOR 
+
+  FOR i FROM 0 TO N2-1 DO
+    IF recherche(A,n2,B[i])=FALSE THEN
+      som=som+B[i]
+      write(B[i])
+    END_IF
+  END_FOR
+  write("La somme des elements differents = ", som)
+END
+
+// PROBLEME 2
+procedure remplir(var n:integer, var t:ARRAY_of INTEGER)
+    VAR
+    n: INTEGER;
+    t: INTEGER;
+    i:INTEGER;
+    BEGIN
+      write("Donner la taille du t")
+      read(n)
+    FOR i FROM 0 TO n-1 DO
+      IF T [i] = x THEN
+        nb := nb +1
+      END_IF
+    END_FOR
+  END
+
+  FUNCTION produit_scal(a,b:array_of FLOAT,n:integer):FLOAT
+VAR
+ a,b:FLOAT;
+ n: INTEGER;
+BEGIN
+  som:=0
+  FOR j FROM 0 TO n-1 DO
+    som=som+a[i]*b[i]
+  END_FOR
+  return som
+END
+ALGORITHM produit_scalaire
+VAR
+ v1,n: INTEGER;
+ v2,n: INTEGER;
+BEGIN
+  remplir(v1,n)
+  remplir (v2,n)
+  IF produit_scal(v1,V2,n)=0 THEN
+    write("write ces deux vecteurs sont orthogonaux")
+END
+  // produit scalaire avec une procedure
+ PROCEDURE procedure_name  procedure produit_scal(a,b:array_of FLOAT,n:integer, VAR som:integer)
+VAR
+ a,b: FLOAT;
+ n: INTEGER;
+ som: INTEGER;
+BEGIN
+  som:=0
+  FOR j FROM 0 TO n-1 DO
+    som=som+a[i]*b[i]
+  END_FOR
+END
